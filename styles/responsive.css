@@ -1,0 +1,239 @@
+@media screen and (min-width: 1400px) {
+  .portfolios .imgBxs > *:nth-child(5) {
+    margin-top: -240px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* Navbar */
+  nav {
+    position: fixed;
+    top: 100px;
+    left: -100%;
+    padding: 3rem 0;
+    background-color: rgba(6, 82, 221, 0.7);
+    width: 100%;
+    min-height: 50vh;
+    z-index: 999;
+    transition: all 0.5s ease-in-out;
+  }
+  .navigation nav ul li {
+    display: block;
+    line-height: 5rem;
+  }
+  .navigation nav ul li a {
+    color: #fff;
+  }
+  #bars {
+    width: 45px;
+    height: 40px;
+    cursor: pointer;
+  }
+  #bars .bar {
+    height: 3px;
+    width: 100%;
+    background-color: var(--common-color);
+    margin-top: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+  #checkbox:checked ~ nav {
+    left: 0;
+  }
+  #checkbox:checked ~ #bars > .bar {
+    background-color: red;
+  }
+  #checkbox:checked ~ #bars > #bar-2 {
+    opacity: 0;
+  }
+  #checkbox:checked ~ #bars > #bar-1 {
+    transform: rotate(135deg);
+  }
+  #checkbox:checked ~ #bars > #bar-3 {
+    margin-top: -12px;
+    transform: rotate(-135deg);
+  }
+  /* Banner */
+  .banner .right {
+    display: none;
+  }
+  .banner .left {
+    width: 100%;
+  }
+  /* Portfolio */
+  .portfolios .imgBxs > *:nth-child(5) {
+    margin-top: -165px;
+  }
+  /* Pricing */
+  .pricing .pricing-card {
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+  .pricing .pricing-card button {
+    padding: 1rem !important;
+  }
+  /* Team */
+  .team .team-card {
+    margin: 1rem 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  .headings .title {
+    font-size: 1.5rem !important;
+  }
+  .about .counters,
+  .blog .blogBx {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .services .serviceBx {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .services .serviceBx .imgBx {
+    margin-bottom: 1rem;
+  }
+  .serviceBxs > * {
+    border: none !important;
+  }
+  .portfolios .imgBxs > *:nth-child(5) {
+    margin-top: -115px;
+  }
+  #contact .box {
+    margin: 2rem 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  section {
+    padding: 2rem 0 !important;
+  }
+  .headings .title {
+    font-size: 1.3rem !important;
+  }
+  .headings .sm-title,
+  .provides .content h5 {
+    font-size: 1rem !important;
+  }
+  /* Navigation */
+  .navigation .buttons {
+    display: none;
+  }
+  /* Banner */
+  .banner {
+    height: auto;
+  }
+  .banner .left h1 {
+    font-size: 2rem;
+  }
+  .banner .left p {
+    font-size: 1rem;
+    width: 100% !important;
+  }
+  .banner .left .send-mail {
+    margin-top: 2rem;
+  }
+  .banner .left .send-mail input {
+    padding-left: 1rem;
+  }
+  .banner .left .send-mail button {
+    position: initial;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  /* Brands */
+  .sponsors::before {
+    margin: 2rem 0;
+  }
+  /* About */
+  .about > :nth-child(3) {
+    width: 100% !important;
+    text-align: justify;
+    padding: 0 10px;
+  }
+  .about .counters .countdown {
+    margin-top: 2rem;
+  }
+  /* Services */
+  .serviceBxs .serviceBx {
+    border-bottom: 1px solid var(--p-color) !important;
+  }
+  /* Portfolio */
+  .portfolios .imgBx {
+    margin-bottom: 1rem !important;
+  }
+  .portfolios button {
+    margin-top: 1rem !important;
+  }
+  .portfolios .imgBxs > *:nth-child(4),
+  .portfolios .imgBxs > *:nth-child(5),
+  .portfolios .imgBxs > *:nth-child(6) {
+    margin-top: 0px !important;
+  }
+  /* What We Provide */
+  .provides .content h4 {
+    font-size: 1.5rem;
+    line-height: 1rem;
+  }
+  /* News */
+  .news {
+    padding: 3rem 0;
+  }
+  .news .subscription input {
+    width: 100%;
+    border: 2px solid var(--common-color);
+    border-radius: 100px;
+    padding: 1rem 0.5rem;
+  }
+  .news .subscription button {
+    position: initial;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem 0.5rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  section {
+    padding: 2rem 1rem !important;
+  }
+  .about .counters .countdown {
+    justify-content: space-around !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  .banner .left h1,
+  .team .team-card .content h4 {
+    font-size: 1.5rem;
+  }
+  .banner .left p {
+    font-size: 0.8rem;
+  }
+  .about .counters .countdown {
+    justify-content: center !important;
+  }
+  .about .counters .countdown .shape {
+    display: none;
+  }
+  .services .serviceBx {
+    padding: 1rem 0 !important;
+  }
+  .provides .content h4 {
+    line-height: 1.5rem;
+  }
+  .provides .content .d-flex {
+    flex-direction: column;
+  }
+  .team .team-card .content p,
+  .blog .blogBx .content .lead {
+    font-size: 0.9rem;
+  }
+  .team .team-card .content .social-icons {
+    padding: 2rem 0 0 0;
+  }
+  .blog .blogBx .content h4 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 280px) {
+  .main-btn {
+    padding: 1rem !important;
+  }
+}
